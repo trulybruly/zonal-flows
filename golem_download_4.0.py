@@ -3,7 +3,7 @@ import requests
 import os
 import numpy as np
 
-directory = 'Z:\\golemcache\\'
+directory = './golemcache/'
 target_files = ['DRP-L1.csv', 'DRP-R1.csv',
                 'DRP-L2.csv', 'DRP-R2.csv', 
                 'DRP-L3.csv', 'DRP-R3.csv',
