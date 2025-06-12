@@ -3,7 +3,7 @@ import requests
 import os
 import numpy as np
 
-directory = './golemcache/'
+directory = '../golemcache/'
 target_files = ['DRP-L1.csv', 'DRP-R1.csv',
                 'DRP-L2.csv', 'DRP-R2.csv', 
                 'DRP-L3.csv', 'DRP-R3.csv',
@@ -80,7 +80,7 @@ def downloadshot(shotnum, rewrite=True):
         curdir = folders.pop(0)
         folderscan(shotnum, curdir, folders, rewrite)
 
-shotlist = np.arange(49019, 49020, 1)
+shotlist = np.arange(49077, 49078, 1)
 
 for shot in shotlist:
     downloadshot(shot, True)
